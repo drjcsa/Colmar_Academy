@@ -1,0 +1,130 @@
+header {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 64px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 24px;
+    position: absolute;
+}
+
+.logo span {
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#colmar {
+    font-weight: 600;
+    text-transform: uppercase; 
+    font-size: 1.2rem;
+    color:  #1B202B;
+}
+
+#academy {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-size: 1.2rem;
+    color: #687083;
+}
+
+.logo img {
+    height: 3rem;
+    width: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    height: 32px;
+    
+}
+
+nav ul{
+    float: right; 
+    margin-right: 23px;
+    }
+
+nav ul li{
+    display: inline-block;
+    margin: 0 16px;
+    line-height: 52px;
+}
+
+nav ul li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.short {
+    display: inline-block;
+    text-align: center;
+    height: 64px;
+    margin-top: 16px;
+    cursor: pointer;
+    
+}
+
+.short li{
+    margin-right: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 785px) {
+    .long,
+    .logo {
+        display: none;
+    }
+} 
+
+@media screen and (min-width: 785px) {
+    .short{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: gray;
+}
+
+
